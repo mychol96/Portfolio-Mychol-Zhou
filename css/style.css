@@ -1,3 +1,103 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chivo Mono", monospace;
+}
+
+.container {
+  -webkit-box-shadow: 1px 1px 5px lightgray;
+          box-shadow: 1px 1px 5px lightgray;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.sx-section {
+  background-color: #2a2e4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sx-section img {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  background-color: #ffcf77;
+  border-radius: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.sx-section h2 {
+  background-color: #ffcf77;
+  color: black;
+  padding: 10px 40px;
+  font-size: 1em;
+  margin: 15px;
+}
+.sx-section p {
+  color: white;
+  padding: 0 10px 0 10px;
+}
+.sx-section p span {
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+.dx-section {
+  background-color: white;
+}
+.dx-section .info-cv {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dx-section .contatti svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.dx-section h2 {
+  text-align: center;
+  background-color: #ffcf77;
+  color: black;
+  padding: 10px 40px;
+  font-size: 1em;
+  margin: 15px auto;
+}
+.dx-section h3 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.dx-section p {
+  font-size: 0.85em;
+  color: black;
+  padding: 0 10px 0 10px;
+}
+.dx-section p span {
+  text-decoration: underline;
+  font-size: 1em;
+}
+
 .hero {
   position: relative;
   top: 86px;
