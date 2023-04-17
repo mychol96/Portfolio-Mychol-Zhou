@@ -6,7 +6,6 @@
     padding: 0;
 }
 
-
 body {
     font-family: 'Chivo Mono', monospace;
 }
@@ -22,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
     img {
         width: 200px;
@@ -33,6 +31,40 @@ body {
         object-fit: contain;
         object-position: center;
     }
+
+    // X Mobile
+
+    .info-cv-sx {
+      
+        background-color: white;
+        width: 100%;
+        display: flex;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+        display: none;
+    
+        .geralita {
+            p {
+                color: black;
+            }
+        }
+        
+        .contatti {
+
+            p {
+                color: black;
+            }
+
+            svg {
+                width: 15px;
+                height: 15px;
+                margin-right: 5px; 
+                }
+        }
+    }
+    
 
     h2 {
         background-color: #ffcf77;
@@ -67,9 +99,8 @@ body {
         svg {
             width: 15px;
             height: 15px;
-            margin-right: 5px;
-            
-        }
+            margin-right: 5px; 
+            }
     }
 
     h2 {
@@ -97,3 +128,43 @@ body {
 
 }
 
+
+
+
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 400px) {
+   
+    .sx-section {
+        .info-cv-sx {
+            display: block;
+        } 
+    }
+
+    .dx-section {
+        .info-cv{
+            display: none;
+        }
+    }
+}
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+
+    .sx-section {
+        .info-cv-sx {
+            display: block;
+        } 
+    }
+
+    .dx-section {
+        .info-cv{
+            display: none;
+        }
+    }
+
+
+}

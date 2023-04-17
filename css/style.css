@@ -40,6 +40,28 @@ body {
   -o-object-position: center;
      object-position: center;
 }
+.sx-section .info-cv-sx {
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: none;
+}
+.sx-section .info-cv-sx .geralita p {
+  color: black;
+}
+.sx-section .info-cv-sx .contatti p {
+  color: black;
+}
+.sx-section .info-cv-sx .contatti svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
 .sx-section h2 {
   background-color: #ffcf77;
   color: black;
@@ -98,6 +120,24 @@ body {
   font-size: 1em;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .sx-section .info-cv-sx {
+    display: block;
+  }
+  .dx-section .info-cv {
+    display: none;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+  .sx-section .info-cv-sx {
+    display: block;
+  }
+  .dx-section .info-cv {
+    display: none;
+  }
+}
 .hero {
   position: relative;
   top: 86px;
@@ -516,6 +556,7 @@ footer .contatti {
   padding: 60px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 100px;
 }
 footer .contatti a {
   scroll-margin-top: 210px;
