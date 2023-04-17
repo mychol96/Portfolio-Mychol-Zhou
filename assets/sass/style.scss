@@ -6,9 +6,7 @@
 
 $primary-color:#ffcf77;
 $secondary-color:#2a2e4a;
-$third-color:#eddcda;
-$fourth-color:#e26d5c;
-$fifth-color:#e5989b;
+
 $stack-font: 'Roboto', sans-serif;
 $stack-font-2: 'Chivo Mono', monospace;
 
@@ -23,8 +21,10 @@ $stack-font-2: 'Chivo Mono', monospace;
 
 body {
     font-family: 'Chivo Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
  
 
@@ -118,24 +118,24 @@ header {
         }
     }
 
-.icon-hamburger {
-    cursor: pointer;
-    margin-top: 20px;
-    margin-right: 10px;
-    display: block;
-
-
-    span {
-        height: 2px;
-        width: 30px;
+    .icon-hamburger {
+        cursor: pointer;
+        margin-top: 20px;
+        margin-right: 10px;
         display: block;
-        background-color: white;
-        margin-top: 10px;
-        margin-right: 20px;
 
-        transition: all 0.3s cubic-bezier(.215, .61, .355, 1);    
+
+        span {
+            height: 2px;
+            width: 30px;
+            display: block;
+            background-color: white;
+            margin-top: 10px;
+            margin-right: 20px;
+
+            transition: all 0.3s cubic-bezier(.215, .61, .355, 1);    
+        }
     }
-}
 
     .header-menu-open .icon-hamburger span:nth-child(1) {
         transform: rotate(45deg) translateY(17px);
