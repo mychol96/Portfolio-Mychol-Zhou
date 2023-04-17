@@ -13,19 +13,17 @@
     width: 100%;
     height: 100vh;   
 
-    .hero-container {
-        
+    .hero-container { 
         margin: 0 auto;
-        width: 1200px;
+        width: 100%;
         max-width: 1200px;
         
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: -100px;
+        margin-top: -80px;
        
         .about-me {
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,9 +32,9 @@
             font-family: 'Chivo Mono', monospace;
             
             p {
-                font-size: 30px;
+                font-size: 35px;
                 font-weight: 500;
-
+            
                 span {
                     font-size: 18px;
                     color: #ffcf77;
@@ -45,14 +43,15 @@
                 }
             }
         }
-        .img-container {      
+
+        .img-container {  
             img {
                 object-fit: contain;
                 object-position: center;
-                width: 300px;
-                height: 300px;
+                height: 400px;
+                width: 400px;
                 border-radius: 100%;
-                border: 2px solid #ffcf77;
+                border: 1px solid #ffcf77;
                 background-color: #ffcf77;
             }
         }
@@ -64,18 +63,20 @@
     background-color: #2a2e4a;
     display: flex;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
+    width: 100%;
   
     .about-content {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-
+        
         max-width: 1000px;
         margin: 0 auto;
 
         color: white;
         padding: 60px;
+        text-align: justify;
 
         a {
             scroll-margin-top: 120px;
@@ -101,18 +102,19 @@
     
     background-color: white; 
     box-shadow: 1px 1px 4px #2a2e4a;
-    border-radius: 10px;
-    margin: -150px auto;
+    border-radius: 20px;
+    margin-top: -230px;
     padding-bottom: 15px;
     z-index: 10; 
     max-width: 1200px;
-    
+    width: calc(100% - 40px);
+   
 
     .skills-container {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 40px;
+        padding: 20px;
         height: 100%;
         max-width: 1000px;
         margin: 0 auto;
@@ -123,19 +125,9 @@
     }
 
 
-    .skills-title  {
-        display: flex;
-        justify-content: space-around;
-        font-weight: 700; 
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        margin: 0 auto;
-        max-width: 1500px;
-    }
-
     span {
         margin-top: -5px;
-        margin-bottom: 15px;
+        
         height: 3px;
         width: 50px;
         display: block;
@@ -143,16 +135,16 @@
     }
 
     .skills-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
         max-width: 1500px;
         font-size: 12px;
+        padding: 0 40px 40px 40px;
 
         .languages-learned {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            border-right: 1px solid rgba(213, 213, 213, 0.8);   
+             
         }
 
         .languages-learning {
@@ -161,15 +153,28 @@
         }
 
         svg {
-            width: 40px;
+            width: 60px;
         }
     }
+}
+
+.skills-title  {
+    display: block;
+    font-size: 20px;
+    font-weight: 700; 
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
 }
 
 .language {
     display: flex;
     flex-direction: column;
     align-items: center;
+    p {
+        padding: 7px;
+    }
 }
 
 // PORTFOLIO SECTION 
@@ -177,7 +182,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 30px;
 
   
     .portfolio-container {
@@ -188,7 +193,7 @@
         width: 100%;
 
         a {
-            scroll-margin-top: 30px;
+            scroll-margin-top: 20px;
         }
         
         
@@ -286,26 +291,55 @@
 /* Mobile Styles */
 
 @media only screen and (max-width: 400px) {
+
+// HERO SECTION mobile
+
+.hero {
     .hero-container {
         flex-direction: column;
+            .about-me{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    font-size: 1.3em;
+                    span {
+                        font-size: 0.75em;
+                    }
+                }
+             }
+             .img-container {
+                padding-top: 0;
+                img {
+                    max-width: 250px;
+                    max-height: 250px; 
+                 }
+            }
         } 
-    }
-    .img-container {
-        padding-top: 0;
-        img {
-            width: 100%; 
-            height: auto; 
-            max-width: 300px;
-            max-height: 300px; 
+}
+    
+  
+// ABOUT SECTION mobile
+        .about {
+            .about-content {
+                p {
+                    text-align: start;
+                    font-size: 0.85rem;
+                }
+            }
         }
-    }
 
-    .about-content {
-        p {
-            font-size: 0.75em;
-        }
-    }
+// SKILLS SECTION mobile
 
+        .skills {
+            .skills-content {
+                svg {
+                    width: 40px;
+                    }
+                }
+            }
+        
 
     .projects{
         grid-template-columns: 1fr;
@@ -315,6 +349,7 @@
             height: 200px;
         }
     }
+}
 
 
    
@@ -329,6 +364,17 @@
         margin-top: 40px;
        }
 
+
+       // ABOUT SECTION 
+       .about {
+        .about-content {
+            p {
+                text-align: start;
+                font-size: 0.95rem;
+                text-align: justify;
+            }
+        }
+    }
     
         .projects{
             grid-template-columns: 1fr;

@@ -157,7 +157,7 @@ body {
 }
 .hero .hero-container {
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,7 +167,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -100px;
+  margin-top: -80px;
 }
 .hero .hero-container .about-me {
   display: -webkit-box;
@@ -187,7 +187,7 @@ body {
   font-family: "Chivo Mono", monospace;
 }
 .hero .hero-container .about-me p {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 500;
 }
 .hero .hero-container .about-me p span {
@@ -201,10 +201,10 @@ body {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
-  width: 300px;
-  height: 300px;
+  height: 400px;
+  width: 400px;
   border-radius: 100%;
-  border: 2px solid #ffcf77;
+  border: 1px solid #ffcf77;
   background-color: #ffcf77;
 }
 
@@ -216,7 +216,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
+  width: 100%;
 }
 .about .about-content {
   display: -webkit-box;
@@ -233,6 +234,7 @@ body {
   margin: 0 auto;
   color: white;
   padding: 60px;
+  text-align: justify;
 }
 .about .about-content a {
   scroll-margin-top: 120px;
@@ -253,11 +255,12 @@ body {
   background-color: white;
   -webkit-box-shadow: 1px 1px 4px #2a2e4a;
           box-shadow: 1px 1px 4px #2a2e4a;
-  border-radius: 10px;
-  margin: -150px auto;
+  border-radius: 20px;
+  margin-top: -230px;
   padding-bottom: 15px;
   z-index: 10;
   max-width: 1200px;
+  width: calc(100% - 40px);
 }
 .skills .skills-container {
   display: -webkit-box;
@@ -270,7 +273,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 40px;
+  padding: 20px;
   height: 100%;
   max-width: 1000px;
   margin: 0 auto;
@@ -278,44 +281,45 @@ body {
 .skills .skills-container a {
   scroll-margin-top: 120px;
 }
-.skills .skills-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  margin: 0 auto;
-  max-width: 1500px;
-}
 .skills span {
   margin-top: -5px;
-  margin-bottom: 15px;
   height: 3px;
   width: 50px;
   display: block;
   background-color: #ffcf77;
 }
 .skills .skills-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1500px;
   font-size: 12px;
+  padding: 0 40px 40px 40px;
 }
 .skills .skills-content .languages-learned {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-right: 1px solid rgba(213, 213, 213, 0.8);
 }
 .skills .skills-content .languages-learning {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .skills .skills-content svg {
-  width: 40px;
+  width: 60px;
+}
+
+.skills-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 }
 
 .language {
@@ -330,6 +334,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.language p {
+  padding: 7px;
+}
 
 .portfolio {
   display: -webkit-box;
@@ -342,7 +349,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 150px;
+  padding-top: 30px;
 }
 .portfolio .portfolio-container {
   display: -webkit-box;
@@ -359,7 +366,7 @@ body {
   width: 100%;
 }
 .portfolio .portfolio-container a {
-  scroll-margin-top: 30px;
+  scroll-margin-top: 20px;
 }
 .portfolio .portfolio-container h2 {
   width: 100%;
@@ -454,36 +461,53 @@ body {
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  .hero-container {
+  .hero .hero-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .hero .hero-container .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .hero-container .about-me p {
+    font-size: 1.3em;
+  }
+  .hero .hero-container .about-me p span {
+    font-size: 0.75em;
+  }
+  .hero .hero-container .img-container {
+    padding-top: 0;
+  }
+  .hero .hero-container .img-container img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .about .about-content p {
+    text-align: start;
+    font-size: 0.85rem;
+  }
+  .skills .skills-content svg {
+    width: 40px;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .projects .project {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 200px;
+  }
 }
-.img-container {
-  padding-top: 0;
-}
-.img-container img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.about-content p {
-  font-size: 0.75em;
-}
-
-.projects {
-  grid-template-columns: 1fr;
-}
-.projects .project {
-  margin-left: 40px;
-  margin-right: 40px;
-  height: 200px;
-}
-
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .hero-container {
@@ -494,6 +518,11 @@ body {
   }
   .img-container {
     margin-top: 40px;
+  }
+  .about .about-content p {
+    text-align: start;
+    font-size: 0.95rem;
+    text-align: justify;
   }
   .projects {
     grid-template-columns: 1fr;
@@ -688,6 +717,16 @@ footer .social p {
 
 body {
   font-family: "Chivo Mono", monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header {
