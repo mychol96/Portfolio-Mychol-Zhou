@@ -2,6 +2,8 @@
 @import 'main';
 @import 'footer';
 
+
+
 $primary-color:#ffcf77;
 $secondary-color:#2a2e4a;
 $third-color:#eddcda;
@@ -25,6 +27,7 @@ body {
 
 
  
+
 //HEADER
 
 header {
@@ -35,9 +38,7 @@ header {
     background-color: $secondary-color;
     z-index: 999;
 
-
     .header-content {
-      
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
@@ -56,12 +57,11 @@ header {
             padding-top: 16px;
             padding-right: 15px;
 
-
             li {
                 display: inline-block;
                 padding: 15px;
 
-                a{
+                a {
                     text-decoration: none;
                     list-style-type: none;
                     color: white;
@@ -79,7 +79,7 @@ header {
                         color: rgb(255, 207, 119);
                      }
                     
-                }
+                    }
 
                 a:hover {
                     border-bottom: 1px inset $primary-color;
@@ -102,7 +102,6 @@ header {
         position: absolute;
         top: 75px;
         width: 100vw;
-    
         
         display: flex;
         flex-direction: column;
@@ -120,7 +119,6 @@ header {
     }
 
 .icon-hamburger {
-    
     cursor: pointer;
     margin-top: 20px;
     margin-right: 10px;
@@ -142,7 +140,6 @@ header {
     .header-menu-open .icon-hamburger span:nth-child(1) {
         transform: rotate(45deg) translateY(17px);
         margin-left: 22px;
-        
     }
 
     .header-menu-open .icon-hamburger span:nth-child(3) {
@@ -154,11 +151,10 @@ header {
         opacity: 0;
     }
 
-.header-menu-open .header-menu { 
-    height: 100vh;
-    transition: all 1s cubic-bezier(.215, .61, .355, 1);
-}
-
+    .header-menu-open .header-menu { 
+        height: 100vh;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    }
 }
 
 
