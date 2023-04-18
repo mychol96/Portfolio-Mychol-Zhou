@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Chivo Mono', monospace;
+   
 }
 
 .container {
@@ -126,6 +127,13 @@ body {
         }
     }
 
+}
+
+footer {
+    width: 100%;
+    .social {
+        width: 100%;
+    }
 }
 
 

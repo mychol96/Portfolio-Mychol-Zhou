@@ -6,6 +6,9 @@ footer {
     flex-direction: column;
     align-items: center;   
 
+
+// Form 
+
     .contatti {   
         background-color: white;
         box-shadow: 1px 1px 5px lightgray;
@@ -15,14 +18,15 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         max-width: 1000px;
-        width: 100%;
+        width: calc(100% - 40px);
         padding: 60px;
         margin-left: 15px;
         margin-right: 15px;
         margin-bottom: 100px;
 
+
         a {
-            scroll-margin-top: 210px;
+            scroll-margin-top: 150px;
         }
 
         p {
@@ -47,17 +51,12 @@ footer {
                 font-weight: 600;
             }
 
-            input {
+            input, textarea {
                 margin-top: 10px;
                 padding: 15px;
                 border-radius: 10px;
             }
             
-            textarea {
-                margin-top: 10px;
-                padding: 15px;
-                border-radius: 10px;
-            }
             button {
                 background-color: #ffcf77;
                 padding: 20px 40px;
@@ -76,7 +75,7 @@ footer {
             }
         }
 
-
+// FOOTER
             .social {
                 display: flex;
                 flex-direction: column;
@@ -122,7 +121,7 @@ footer {
                     font-size: 12px;
                     margin-top: 27px;
                 }
-            }
+        }
     }
 
 
@@ -135,6 +134,13 @@ footer {
     footer {   
         .contatti {
             padding: 30px;
+
+            form {
+                button {
+                    width: 130px;
+                    height: 60px;
+                }
+            }
         }
     }  
 }

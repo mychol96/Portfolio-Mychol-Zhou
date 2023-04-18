@@ -1,9 +1,12 @@
 // PORTFOLIO SECTION 
 .portfolio {
+    
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 30px;
+    width: 100%;
+
+    margin-bottom: 100px;
 
   
     .portfolio-container {
@@ -16,7 +19,6 @@
         a {
             scroll-margin-top: 20px;
         }
-        
         
         h2 {
             width: 100%;
@@ -37,19 +39,21 @@
 
         p {
             margin-left: 60px;
+            margin-right: 60px;
+            text-align: justify;
         }
     }
 }
 
 .projects {  
-    margin-top: 80px;    
-    
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px 60px;
-    margin-bottom: 100px;
+    grid-template-columns: 1fr 1fr; 
+
+    padding: 50px;
     width: 100%;
     max-width: 1200px;
+    margin-top: 70px;  
+    gap: 50px;
 
     div:nth-child(1) {
         background-color: #eddcda;
@@ -71,6 +75,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         color: white;
         text-transform: uppercase;
         font-size: 20px;
@@ -107,18 +112,24 @@
 }
 
 
-
-
-
 /* Mobile Styles */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
         
+    .portfolio {
+        .portfolio-container {
+           p {
+            font-size: 0.85em;
+           }
+        }
+    }
+
     .projects{
+        padding: 0;
         grid-template-columns: 1fr;
         .project {
-            margin-left: 40px;
-            margin-right: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
             height: 200px;
         }
     }
@@ -128,13 +139,15 @@
    
   
   /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
+  @media only screen and (min-width: 426px) and (max-width: 960px) {
     
         .projects{
             grid-template-columns: 1fr;
+            padding: 10px;
             .project {
                 margin-left: 40px;
                 margin-right: 40px;
+                height: 300px;
             }
         }
   }
