@@ -90,6 +90,9 @@
     // SKILLS SECTION mobile
     
             .skills {
+                .skills-container {
+                    margin-left: 20px;
+                }
                 .skills-content {
                     svg {
                         width: 40px;
@@ -100,7 +103,16 @@
 
 }
 
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
 
+    .skills {
+        .skills-container {
+            margin-left: 22px;
+        }
+    }
+
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
