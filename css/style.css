@@ -467,12 +467,12 @@ footer .social {
   width: 100%;
 }
 .portfolio .portfolio-container a {
-  scroll-margin-top: 20px;
+  scroll-margin-top: 50px;
 }
 .portfolio .portfolio-container h2 {
   width: 100%;
   max-width: 1000px;
-  padding-top: 100px;
+  padding-top: 75px;
   padding-left: 60px;
 }
 .portfolio .portfolio-container span {
@@ -635,7 +635,7 @@ footer .contatti {
   margin-bottom: 100px;
 }
 footer .contatti a {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 170px;
 }
 footer .contatti p {
   margin-top: 20px;
