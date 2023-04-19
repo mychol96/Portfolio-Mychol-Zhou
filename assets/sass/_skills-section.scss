@@ -1,5 +1,8 @@
 
 // SKILLS SECTION 
+
+
+
 .skills {
     
     background-color: white; 
@@ -45,8 +48,7 @@
 
         .languages-learned {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-             
+            grid-template-columns: 1fr 1fr;   
         }
 
         .languages-learning {
@@ -62,8 +64,8 @@
 
 .skills-title  {
     display: block;
-    font-size: 20px;
-    font-weight: 700; 
+    font-size: 18px;
+    font-weight: 500; 
     margin-bottom: 40px;
     text-transform: uppercase;
     text-align: center;
