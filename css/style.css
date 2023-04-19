@@ -9,11 +9,35 @@ body {
   font-family: "Chivo Mono", monospace;
 }
 
-.container {
+.download-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  max-width: 1400px;
+}
+.download-container a .download-btn {
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: 1px solid #2a2e4a;
+  background-color: white;
+  color: #2a2e4a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.download-container a .download-btn:hover {
+  color: #2a2e4a;
+  background-color: #ffcf77;
+}
+
+.main-container {
   -webkit-box-shadow: 1px 1px 5px lightgray;
           box-shadow: 1px 1px 5px lightgray;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 45px;
 }
 
 .sx-section {
@@ -393,8 +417,8 @@ footer .social {
 
 .skills-title {
   display: block;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 40px;
   text-transform: uppercase;
   text-align: center;

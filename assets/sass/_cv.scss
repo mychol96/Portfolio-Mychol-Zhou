@@ -11,10 +11,35 @@ body {
    
 }
 
-.container {
+.download-container {
+    display: flex;
+    justify-content:flex-end;
+    width: 100%;
+    max-width: 1400px;
+
+    a {
+        .download-btn {
+            padding: 8px 20px;
+            border-radius: 10px;
+            border: 1px solid #2a2e4a;
+            background-color: white;
+            color: #2a2e4a;
+            transition: 0.3s;
+    
+            &:hover {
+                color: #2a2e4a;
+                background-color: #ffcf77;
+                 
+            }
+        }
+        
+    }
+}
+
+.main-container {
     box-shadow: 1px 1px 5px lightgray;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 45px;
 }
 
 .sx-section {
@@ -173,6 +198,4 @@ footer {
             display: none;
         }
     }
-
-
 }
