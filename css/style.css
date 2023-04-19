@@ -36,7 +36,7 @@ body {
 .main-container {
   -webkit-box-shadow: 1px 1px 5px lightgray;
           box-shadow: 1px 1px 5px lightgray;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 45px;
 }
 
@@ -303,7 +303,7 @@ footer .social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 200px;
+  padding-bottom: 340px;
   width: 100%;
 }
 .about .about-content {
@@ -359,7 +359,7 @@ footer .social {
   -webkit-box-shadow: 1px 1px 4px #2a2e4a;
           box-shadow: 1px 1px 4px #2a2e4a;
   border-radius: 20px;
-  margin-top: -230px;
+  margin-top: -330px;
   padding-bottom: 15px;
   z-index: 10;
   max-width: 1200px;
