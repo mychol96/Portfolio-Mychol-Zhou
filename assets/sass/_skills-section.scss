@@ -1,7 +1,6 @@
 
 // SKILLS SECTION 
 
-
 .skills {
     
     background-color: white; 
@@ -47,7 +46,14 @@
 
         .languages-learned {
             display: grid;
-            grid-template-columns: 1fr 1fr;   
+            grid-template-columns: 1fr 1fr; 
+            .language {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    padding: 7px;
+                }
         }
 
         .languages-learning {
@@ -69,16 +75,9 @@
     text-transform: uppercase;
     text-align: center;
     width: 100%;
+ }
 }
 
-.language {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p {
-        padding: 7px;
-    }
-}
 
 
 
@@ -112,7 +111,6 @@
             margin-left: 22px;
         }
     }
-
 }
 
 /* Desktop Styles */
@@ -122,6 +120,6 @@
     .skills {
         .skills-container {  
             padding: 30px 60px;
+         }
         }
     }
-}

@@ -410,25 +410,7 @@ footer .social {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.skills .skills-content .languages-learning {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.skills .skills-content svg {
-  width: 60px;
-}
-
-.skills-title {
-  display: block;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-}
-
-.language {
+.skills .skills-content .languages-learned .language {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,8 +422,24 @@ footer .social {
       -ms-flex-align: center;
           align-items: center;
 }
-.language p {
+.skills .skills-content .languages-learned .language p {
   padding: 7px;
+}
+.skills .skills-content .languages-learned .languages-learning {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.skills .skills-content .languages-learned svg {
+  width: 60px;
+}
+.skills .skills-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 }
 
 /* Mobile Styles */
