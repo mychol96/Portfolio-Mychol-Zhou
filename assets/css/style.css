@@ -86,6 +86,10 @@ body {
   height: 15px;
   margin-right: 5px;
 }
+.sx-section h1 {
+  color: white;
+  font-size: 1.75em;
+}
 .sx-section h2 {
   background-color: #ffcf77;
   color: black;
@@ -220,11 +224,11 @@ footer .social {
   color: black;
   font-family: "Chivo Mono", monospace;
 }
-.hero .hero-container .about-me p {
+.hero .hero-container .about-me h1 {
   font-size: 35px;
   font-weight: 500;
 }
-.hero .hero-container .about-me p span {
+.hero .hero-container .about-me h1 span {
   font-size: 18px;
   color: #ffcf77;
   background-color: white;
@@ -262,10 +266,10 @@ footer .social {
         -ms-flex-align: center;
             align-items: center;
   }
-  .hero .hero-container .about-me p {
+  .hero .hero-container .about-me h1 {
     font-size: 1.3em;
   }
-  .hero .hero-container .about-me p span {
+  .hero .hero-container .about-me h1 span {
     font-size: 0.75em;
   }
   .hero .hero-container .img-container {
@@ -290,11 +294,11 @@ footer .social {
 }
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .about-me p {
+  .about-me h1 {
     font-size: 36px;
     font-weight: 500;
   }
-  .about-me p span {
+  .about-me h1 span {
     font-size: small;
   }
 }

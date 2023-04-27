@@ -1,7 +1,9 @@
 
-
 // HERO SECTION 
+
+
 .hero {
+    
     position: relative;
     top: 86px;
     left: 0;
@@ -32,7 +34,7 @@
             color: black;
             font-family: 'Chivo Mono', monospace;
             
-            p {
+            h1 {
                 font-size: 35px;
                 font-weight: 500;
             
@@ -76,7 +78,7 @@
                 flex-direction: column;
                 align-items: center;
 
-                p {
+                h1 {
                     font-size: 1.3em;
                     span {
                         font-size: 0.75em;
@@ -118,7 +120,7 @@
   @media only screen and (min-width: 961px) { 
 
     .about-me {
-        p {
+        h1 {
             font-size: 36px;
             font-weight: 500;
 
